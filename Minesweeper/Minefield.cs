@@ -410,7 +410,7 @@ namespace Minesweeper
                 System.Console.WriteLine("-----------------------------\n  01234\n4|?????\n3|?????\n2|?????\n1|?????\n0|?????\nPlease choose coordinates x and y separated by space:".Replace("\n", Environment.NewLine)); //UPDATE THIS?
                 initiated = 1;
             }
-            else
+            else if (initiated == 1)
             {
                 System.Console.WriteLine("-----------------------------");
                 System.Console.WriteLine("  01234");

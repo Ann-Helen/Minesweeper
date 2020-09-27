@@ -91,7 +91,10 @@ namespace Minesweeper
                             {
                                 //Call game function
                                 field.PlayGame(X, Y);
-                                field.PrintBoard();
+                                if (field.end == 0)
+                                {
+                                    field.PrintBoard();
+                                }
                                 break;
                             }
                             else
@@ -119,7 +122,7 @@ namespace Minesweeper
             {
                 System.Console.WriteLine();
                 System.Console.WriteLine("+++++ BOOOOOOOM! +++++");
-                System.Console.WriteLine("01234");
+                System.Console.WriteLine("  01234");
                 int h = field.gameField.GetLength(1);
                 int w = field.gameField.GetLength(0);
                 int o = field.gameField.GetLength(1) - 1;
@@ -129,12 +132,13 @@ namespace Minesweeper
                     {
                         if (p == 0)
                         {
-                            System.Console.Write("\n" + o + "|".Replace("\n", Environment.NewLine));
+                            System.Console.Write(o + "|".Replace("\n", Environment.NewLine));
                             o--;
                         }
 
                         System.Console.Write("{0}", field.gameField[p, q]);
                     }
+                    System.Console.WriteLine();
                 }
                 System.Console.WriteLine("\nGAME OVER. Thanks for playing!".Replace("\n", Environment.NewLine));
             }
@@ -142,7 +146,7 @@ namespace Minesweeper
             if (field.end == 2)
             {
                 System.Console.WriteLine(". o O * VICTORY !* O o .");
-                System.Console.WriteLine("01234");
+                System.Console.WriteLine("  01234");
                 int h = field.gameField.GetLength(1);
                 int w = field.gameField.GetLength(0);
                 int o = field.gameField.GetLength(1) - 1;
@@ -161,10 +165,6 @@ namespace Minesweeper
                 }
                 System.Console.WriteLine("\nYOU WON. Thanks for playing!".Replace("\n", Environment.NewLine));
             }
-
-            //end message
-            
-
         }
     }
 }

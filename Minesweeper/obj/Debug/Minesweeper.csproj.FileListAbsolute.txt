@@ -22,3 +22,13 @@ D:\OneDrive\Dokument\Jobbsök\Minesweeper\Minesweeper\obj\Debug\Minesweeper.pdb
 D:\OneDrive\Dokument\Jobbsök\Minesweeper\Minesweeper\bin\Debug\Aspose.Cells.dll
 D:\OneDrive\Dokument\Jobbsök\Minesweeper\Minesweeper\bin\Debug\Aspose.Cells.xml
 D:\OneDrive\Dokument\Jobbsök\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csproj.CopyComplete
+D:\OneDrive\Dokument\GitHub\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe.config
+D:\OneDrive\Dokument\GitHub\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe
+D:\OneDrive\Dokument\GitHub\Minesweeper\Minesweeper\bin\Debug\Minesweeper.pdb
+D:\OneDrive\Dokument\GitHub\Minesweeper\Minesweeper\bin\Debug\Aspose.Cells.dll
+D:\OneDrive\Dokument\GitHub\Minesweeper\Minesweeper\bin\Debug\Aspose.Cells.xml
+D:\OneDrive\Dokument\GitHub\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csprojAssemblyReference.cache
+D:\OneDrive\Dokument\GitHub\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csproj.CoreCompileInputs.cache
+D:\OneDrive\Dokument\GitHub\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csproj.CopyComplete
+D:\OneDrive\Dokument\GitHub\Minesweeper\Minesweeper\obj\Debug\Minesweeper.exe
+D:\OneDrive\Dokument\GitHub\Minesweeper\Minesweeper\obj\Debug\Minesweeper.pdb
