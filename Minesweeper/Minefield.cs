@@ -11,15 +11,14 @@ namespace Minesweeper
     {
         private bool[,] _bombLocations = new bool[5, 5];
         public int initiated = 0;
-        public string[,] gameField = new string[5, 5];
-        public string[,] gameBoard = new string[5, 5];
+        public string[,] gameField = new string[5, 5]; //Hidden
+        public string[,] gameBoard = new string[5, 5]; //"Visible"
         public int end = 0;
 
         public string[,] Populate()
         {
             int h = gameField.GetLength(1);
             int w = gameField.GetLength(0);
-            int o = gameField.GetLength(1) - 1;
             for (int q = w - 1; q >= 0; q--)
             {
                 for (int p = 0; p < h; p++)
@@ -41,7 +40,7 @@ namespace Minesweeper
             return _bombLocations[x, y];
         }
 
-        //Visualize the gamefield with an array of arrays.
+        //Visualize the gamefield.
         public string[,] CreateGameField()
         {
 
@@ -50,19 +49,19 @@ namespace Minesweeper
             {
                 for (int n = 0; n < 5; n++)
                 {
-                    //FIRST, set the X:es to mark where there are bombs.
                     if (_bombLocations[m, n] == true)
                     {
                         gameField[m, n] = "X";
                     }
                     else
                     {
+                        //place a space where there are no bombs
                         gameField[m, n] = " ";
                     }
                 }
             }
 
-            //With the bombs safely placed in the array gameField, we can count bombs and set values.
+            //With the bombs safely placed in gameField, we can count adjacent bombs and set values.
             for (int m = 0; m < 5; m++)
             {
                 for (int n = 0; n < 5; n++)
@@ -140,14 +139,14 @@ namespace Minesweeper
                     {
                         gameField[m, n] = counter.ToString();
                     }
-
+                    //Reset counter before moving to next coordinate
                     counter = 0;
                 }
             }
             return gameField;
         }
 
-        //And one that updates the game field after every input.
+        //Update the game field after every input.
         public string[,] UpdateBoard(int X, int Y)
         {
             //Find the location of the coordinates and then loop outward. So while the next step us " ".
@@ -402,6 +401,7 @@ namespace Minesweeper
             return gameBoard;
         }
 
+        //Prints the board after every board update while the game still runs + the starting board.
         public void PrintBoard()
         {
             //Print the starting field
